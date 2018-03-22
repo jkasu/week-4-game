@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Crystal Collector!</h1>
+    </div>
+    <div class="instructions">
+        </br>
+
+        <li>You will be given a random number at the start of the game.</li>
+        </br>
+        <li>There are four crystals below. By Clicking on a Crystal you will add a specific amount of points to your total score.</li>
+        </br>
+        <li>You win the game by matching your total score to random number, you lose the game if your total score goes above
+            the random.</li>
+        </br>
+        <li>The value of each crystal is hidden from you until you click on it.</li>
+        </br>
+        <li>You lose the game if your total score goes above the random number.</li>
+        </br>
+        <li>Each time when the game starts, the game will change the values of each crystal.</li>
+        </br>
+
+
+    </div>
+    <div class="numberToMatch">
+
+        <span id="randomNumber"></span>
+
+    </div>
+    <div class="winsAndLosses">
+        <h2>Wins:
+            <span id="numberWins"></span>
+            </br>
+            Losses:
+            <span id="numberLosses"></span>
+        </h2>
+    </div>
+    <div class="gems">
+
+        <img src="assets/Images/red.png" class=gemImage id="three" alt="Red Gem">
+        <img src="assets/Images/blue.png" class=gemImage id="one" alt="Blue Gem">
+        <img src="assets/Images/yellow.png" class=gemImage id="four" alt="Yellow Gem">
+        <img src="assets/Images/green.png" class=gemImage id="two" alt="Green Gem">
+
+
+    </div>
+    <div class="userTotal">
+        <h2>Your total score is:
+        </h2>
+    </div>
+
+    <div class="useerTotal">
+
+        <span id="finalTotal"></span>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/game.js"></script>
+</body>
+
+</html>
